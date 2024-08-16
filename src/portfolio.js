@@ -45,7 +45,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "Im a full stack developer who loves to learn, and currently, I feel proficent in:",
+  subTitle: "Im a full stack developer who loves to learn, and currently, I am proficent in:",
   skills: [
   //  emoji(
   //    "⚡ Currently, I am trying to learn more about web development and software engineering."
