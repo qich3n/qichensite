@@ -180,30 +180,30 @@ const bigProjects = {
   subtitle: "Some Projects that I am proud of",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/senzu.webp"),
+      projectName: "Senzu",
+      projectDesc: "A Fitness Social Media Platform",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://master--teamsenzu.netlify.app"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/conveytown.webp"),
+      projectName: "Convey Town - Art Gallery",
+      projectDesc: "An Online Meeting Platform with extra features",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://spring24-project-s24-group-412.onrender.com/"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
