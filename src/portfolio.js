@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Full Stack Software Developer 🚀."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1gBl0rMe4L2MiWaFtbthn732i0hYikDyY/view?usp=share_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1iBggp3UUZy0GixMPPS9oVQ86YXlb0Py-/view?usp=share_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
