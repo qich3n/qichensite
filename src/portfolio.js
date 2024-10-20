@@ -148,7 +148,7 @@ const workExperiences = {
       role: "Software Engineer Intern",
       company: "AMETEK Precitech Inc.",
       companylogo: require("./assets/images/Ametek.png"),
-      date: "June 2018 – Present",
+      date: "June 2022 – December 2022",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       //descBullets: [
       //  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -159,7 +159,7 @@ const workExperiences = {
       role: "Software Engineer Intern",
       company: "Kanzom",
       companylogo: require("./assets/images/kanzom.png"),
-      date: "May 2017 – May 2018",
+      date: "August 2023 – December 2023",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
   ]
