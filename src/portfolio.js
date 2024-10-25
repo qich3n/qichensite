@@ -22,9 +22,7 @@ const illustration = {
 const greeting = {
   username: "Qi Chen",
   title: "Hi, Im Qi",
-  subTitle: emoji(
-    "A passionate Software Developer 🚀"
-  ),
+  subTitle: emoji("A passionate Software Developer 🚀"),
   resumeLink:
     "https://drive.google.com/file/d/1mfPG4gf-j87RIWwwXFqKbGU3p721iP_6/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -45,11 +43,12 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "I am a software developer who loves to learn, and currently, I am proficent in:",
+  subTitle:
+    "I am a software developer who loves to learn, and currently, I am proficent in:",
   skills: [
-  //  emoji(
-  //    "⚡ Currently, I am trying to learn more about web development and software engineering."
-  //  ),
+    //  emoji(
+    //    "⚡ Currently, I am trying to learn more about web development and software engineering."
+    //  ),
     // emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     //emoji(
     //  "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
@@ -109,12 +108,12 @@ const educationInfo = {
       schoolName: "Northeastern University",
       logo: require("./assets/images/Northeastern University.png"),
       subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2019 - May 2024",
+      duration: "September 2019 - May 2024"
       //descBullets: [
       //  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //  "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-       // ]
-    },
+      // ]
+    }
   ]
 };
 
@@ -148,7 +147,7 @@ const workExperiences = {
       role: "Software Engineer Intern",
       company: "AMETEK Precitech Inc.",
       companylogo: require("./assets/images/Ametek.png"),
-      date: "June 2022 – December 2022",
+      date: "June 2022 – December 2022"
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       //descBullets: [
       //  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -159,9 +158,9 @@ const workExperiences = {
       role: "Software Engineer Intern",
       company: "Kanzom",
       companylogo: require("./assets/images/kanzom.png"),
-      date: "August 2023 – December 2023",
+      date: "August 2023 – December 2023"
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
+    }
   ]
 };
 
@@ -334,8 +333,7 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "To Reach Me, Please Contact Me At:",
+  subtitle: "To Reach Me, Please Contact Me At:",
   number: "",
   email_address: "Chen.Qi3@northeastern.edu"
 };
