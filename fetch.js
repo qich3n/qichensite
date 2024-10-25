@@ -131,4 +131,3 @@ if (MEDIUM_USERNAME) {
 } else {
   console.log("No Medium username provided; skipping Medium data fetch.");
 }
-
