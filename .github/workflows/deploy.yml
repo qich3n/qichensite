@@ -7,12 +7,12 @@ env:
   MEDIUM_USERNAME: "" # Change this to your medium username
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # Allow manual triggers
   push:
     branches:
-      - master
+      - master  # Automatic deployment when pushing to master
   schedule:
-    - cron: "0 12 * * 1" # see https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events
+    - cron: "0 12 * * 1"  # Scheduled deployments
 
 jobs:
   build-and-deploy:
@@ -31,14 +31,14 @@ jobs:
       - name: Update npm 🚀
         run: npm install -g npm@latest
 
-      - name: Install and Build 🔧 # Build the Project
+      - name: Install and Build 🔧
         run: |
-          npm install
+          npm install  
           npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          token: ${{ secrets.ACCESS_TOKEN }} # Correct parameter
-          branch: master # Use lowercase 'branch'
-          folder: build # Use lowercase 'folder'
+          token: ${{ secrets.ACCESS_TOKEN }} # Use PAT
+          branch: master # The branch to deploy to
+          folder: build # The folder to deploy
