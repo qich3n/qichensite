@@ -7,12 +7,13 @@ env:
   MEDIUM_USERNAME: "" # Change this to your medium username
 
 on:
-  workflow_dispatch:  # Allow manual triggers
+  workflow_dispatch:
   push:
     branches:
-      - master  # Automatic deployment when pushing to master
-  schedule:
-    - cron: "0 12 * * 1"  # Scheduled deployments
+      - master
+  # schedule:
+  #   - cron: "0 12 * * 1" # Disable scheduled deployments for now
+
 
 jobs:
   build-and-deploy:
@@ -40,5 +41,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.ACCESS_TOKEN }} # Use PAT
-          branch: master # The branch to deploy to
+          branch: gh-build # The branch to deploy to
           folder: build # The folder to deploy
