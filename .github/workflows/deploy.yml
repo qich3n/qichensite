@@ -4,16 +4,16 @@ env:
   GITHUB_USERNAME: ${{ github.repository_owner }}
   REACT_APP_GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # Use PAT here
   USE_GITHUB_DATA: "true"
-  MEDIUM_USERNAME: "" # Change this to your medium username
+  MEDIUM_USERNAME: "" # Leave Medium username blank
 
 on:
-  workflow_dispatch:
-  push:
-    branches:
-      - master
+  workflow_dispatch:  # Allows for manual triggers only
+  # Commenting out the push and schedule events to disable auto-deployments
+  # push:
+  #   branches:
+  #     - master
   # schedule:
-  #   - cron: "0 12 * * 1" # Disable scheduled deployments for now
-
+  #   - cron: "0 12 * * 1"  # Optional: disable scheduled deployments
 
 jobs:
   build-and-deploy:
@@ -34,12 +34,12 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          npm install  
+          npm install
           npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.ACCESS_TOKEN }} # Use PAT
-          branch: gh-build # The branch to deploy to
-          folder: build # The folder to deploy
+          branch: gh-pages # Deploy to gh-pages branch
+          folder: build   # Deploy the build folder
