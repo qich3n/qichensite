@@ -191,6 +191,18 @@ const bigProjects = {
       ]
     },
     {
+      image: require("./assets/images/senzu.webp"),
+      projectName: "Book Explorer",
+      projectDesc: "A Website to explore books",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://book-exploration.netlify.app"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
       image: require("./assets/images/conveytown.webp"),
       projectName: "Convey Town - Art Gallery",
       projectDesc: "An Online Meeting Platform with extra features",
