@@ -191,7 +191,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/senzu.webp"),
+      image: require("./assets/images/bookexplorer.webp"),
       projectName: "Book Explorer",
       projectDesc: "A Website to explore books",
       footerLink: [
