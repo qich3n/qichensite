@@ -176,7 +176,7 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "Some Projects that I am proud of",
+  subtitle: "Some Projects that I have worked on",
   projects: [
     {
       image: require("./assets/images/senzu.webp"),
