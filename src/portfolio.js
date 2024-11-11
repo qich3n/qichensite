@@ -191,13 +191,25 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/bookexplorer.webp"),
+      image: require("./assets/images/cryptoanalysis.webp"),
       projectName: "Book Explorer",
       projectDesc: "A Website to explore books",
       footerLink: [
         {
           name: "Visit Website",
           url: "https://book-exploration.netlify.app"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/bookexplorer.webp"),
+      projectName: "Crypto Analysis",
+      projectDesc: "Analyze the current sentiment on crptocurrencies",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://crypto-sentiment.onrender.com/"
         }
         //  you can add extra buttons here.
       ]
