@@ -44,7 +44,7 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "I am a software developer who loves to learn, and currently, I am proficent in:",
+    "I am a software developer who loves to learn, and currently, I am proficient in:",
   skills: [
     //  emoji(
     //    "⚡ Currently, I am trying to learn more about web development and software engineering."
@@ -176,7 +176,7 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "Some Projects that I have worked on",
+  subtitle: "Some projects that I have worked on:",
   projects: [
     {
       image: require("./assets/images/senzu.webp"),
