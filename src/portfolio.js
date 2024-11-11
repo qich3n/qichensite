@@ -204,7 +204,7 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/cryptoanalysis.webp"),
-      projectName: "Crypto Analysis",
+      projectName: "Crypto Sentiment Analysis",
       projectDesc: "Analyze the current sentiment on crptocurrencies",
       footerLink: [
         {
