@@ -214,7 +214,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://crypto-sentiment.onrender.com/"
+          url: "https://crypto-sentiment-analyzer-l2sz.onrender.com"
         }
         //  you can add extra buttons here.
       ]
