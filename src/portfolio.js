@@ -157,7 +157,7 @@ const workExperiences = {
       role: "Software Engineer Intern",
       company: "Kanzom",
       companylogo: require("./assets/images/kanzom.png"),
-      date: "August 2023 – December 2023",
+      date: "August 2023 – December 2024",
       descBullets: [
         "Worked in an Agile environment, leveraging pair programming and code reviews to develop and enhance features for web applications.",
         "Gained hands-on experience in building scalable full-stack solutions.",
