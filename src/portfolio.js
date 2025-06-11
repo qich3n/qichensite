@@ -222,7 +222,7 @@ const bigProjects = {
     {
       image: require("./assets/images/conveytown.webp"),
       projectName: "Convey Town - Art Gallery",
-      projectDesc: "An Online Meeting Platform with extra features",
+      projectDesc: "An Online Meeting Platform with additional features",
       footerLink: [
         {
           name: "Visit Website",
