@@ -198,7 +198,7 @@ const bigProjects = {
     {
       image: require("./assets/images/bookexplorer.webp"),
       projectName: "Book Explorer",
-      projectDesc: "A Website to explore books",
+      projectDesc: "A platform to discover your next favorite book",
       footerLink: [
         {
           name: "Visit Website",
@@ -210,7 +210,7 @@ const bigProjects = {
     {
       image: require("./assets/images/cryptoanalysis.webp"),
       projectName: "CryptoSense",
-      projectDesc: "Analyze the current sentiment on cryptocurrencies",
+      projectDesc: "A platform to analyze the current sentiment on cryptocurrencies",
       footerLink: [
         {
           name: "Visit Website",
