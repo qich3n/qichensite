@@ -364,7 +364,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "To Reach Me, Please Contact Me At:",
   number: "",
-  email_address: "Chen.Qi3@northeastern.edu"
+  email_address: "Chen.qi3@northeastern.edu"
 };
 
 // Twitter Section
