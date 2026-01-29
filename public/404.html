@@ -6,10 +6,10 @@
     <title>404 - Qi Chen</title>
     <script>
       // GitHub Pages SPA redirect.
-      // If your site is served from the repo subpath (https://user.github.io/repo),
-      // keep segmentCount = 1. If it’s served from the domain root, set it to 0.
+      // This site is served from the domain root (https://qich3n.me),
+      // so we keep only the leading slash before the React app.
       (function () {
-        var segmentCount = 1;
+        var segmentCount = 0;
         var l = window.location;
         var base = l.pathname.split("/").slice(0, 1 + segmentCount).join("/");
         var path = "/" + l.pathname.split("/").slice(1 + segmentCount).join("/");
