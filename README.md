@@ -22,5 +22,5 @@ If your site is deployed at the domain root (not `user.github.io/repo`), open `p
 
 ## Credits
 
-This project started as a fork of the open-source **developerFolio** template by Saad Pasta. UI branding has been removed/overridden, but credit is retained here.
+This project started as a fork of the open-source **developerFolio** template by Saad Pasta. UI branding has been removed/overridden, I’ve added my own touch, and credit is retained here.
 
