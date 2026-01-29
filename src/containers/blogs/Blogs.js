@@ -4,9 +4,11 @@ import BlogCard from "../../components/blogCard/BlogCard";
 import {blogSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import EmptyState from "../../components/emptyState/EmptyState";
 export default function Blogs() {
   const {isDark} = useContext(StyleContext);
   const [mediumBlogs, setMediumBlogs] = useState([]);
+  const [isLoadingMediumBlogs, setIsLoadingMediumBlogs] = useState(false);
   function setMediumBlogsFunction(array) {
     setMediumBlogs(array);
   }
@@ -23,6 +25,7 @@ export default function Blogs() {
   }
   useEffect(() => {
     if (blogSection.displayMediumBlogs === "true") {
+      setIsLoadingMediumBlogs(true);
       const getProfileData = () => {
         fetch("/blogs.json")
           .then(result => {
@@ -32,6 +35,7 @@ export default function Blogs() {
           })
           .then(response => {
             setMediumBlogsFunction(response.items);
+            setIsLoadingMediumBlogs(false);
           })
           .catch(function (error) {
             console.error(
@@ -39,6 +43,7 @@ export default function Blogs() {
             );
             setMediumBlogsFunction("Error");
             blogSection.displayMediumBlogs = "false";
+            setIsLoadingMediumBlogs(false);
           });
       };
       getProfileData();
@@ -47,6 +52,12 @@ export default function Blogs() {
   if (!blogSection.display) {
     return null;
   }
+
+  const usingMediumBlogs =
+    blogSection.displayMediumBlogs === "true" &&
+    !(typeof mediumBlogs === "string" || mediumBlogs instanceof String);
+
+  const localBlogs = blogSection.blogs || [];
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="blogs">
@@ -62,9 +73,34 @@ export default function Blogs() {
         </div>
         <div className="blog-main-div">
           <div className="blog-text-div">
-            {blogSection.displayMediumBlogs !== "true" ||
-            mediumBlogs === "Error"
-              ? blogSection.blogs.map((blog, i) => {
+            {usingMediumBlogs ? (
+              isLoadingMediumBlogs ? (
+                <EmptyState
+                  title="Loading posts…"
+                  description="Give me a second—I'm pulling these in."
+                />
+              ) : mediumBlogs.length > 0 ? (
+                mediumBlogs.map((blog, i) => {
+                  return (
+                    <BlogCard
+                      key={i}
+                      isDark={isDark}
+                      blog={{
+                        url: blog.link,
+                        title: blog.title,
+                        description: extractTextContent(blog.content)
+                      }}
+                    />
+                  );
+                })
+              ) : (
+                <EmptyState
+                  title="No posts here (yet)."
+                  description="Either I haven't published any recently, or I'm still deciding what’s worth writing about."
+                />
+              )
+            ) : localBlogs.length > 0 ? (
+              localBlogs.map((blog, i) => {
                   return (
                     <BlogCard
                       key={i}
@@ -78,19 +114,12 @@ export default function Blogs() {
                     />
                   );
                 })
-              : mediumBlogs.map((blog, i) => {
-                  return (
-                    <BlogCard
-                      key={i}
-                      isDark={isDark}
-                      blog={{
-                        url: blog.link,
-                        title: blog.title,
-                        description: extractTextContent(blog.content)
-                      }}
-                    />
-                  );
-                })}
+            ) : (
+              <EmptyState
+                title="No posts here (yet)."
+                description="I’ll add writing here when I have something I’m genuinely excited to share."
+              />
+            )}
           </div>
         </div>
       </div>

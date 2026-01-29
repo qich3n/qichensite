@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 - Qi Chen</title>
+    <script>
+      // GitHub Pages SPA redirect.
+      // If your site is served from the repo subpath (https://user.github.io/repo),
+      // keep segmentCount = 1. If it’s served from the domain root, set it to 0.
+      (function () {
+        var segmentCount = 1;
+        var l = window.location;
+        var base = l.pathname.split("/").slice(0, 1 + segmentCount).join("/");
+        var path = "/" + l.pathname.split("/").slice(1 + segmentCount).join("/");
+        var search = l.search ? "&q=" + l.search.slice(1) : "";
+        l.replace(l.origin + base + "/?p=" + path + search + l.hash);
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      This page requires JavaScript. Try visiting the home page instead.
+    </noscript>
+  </body>
+</html>
+

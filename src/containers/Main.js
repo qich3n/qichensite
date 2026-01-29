@@ -16,6 +16,7 @@ import ScrollToTopButton from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
+import NotFound from "./notFound/NotFound";
 import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
@@ -43,6 +44,11 @@ const Main = () => {
     setIsDark(!isDark);
   };
 
+  const base = (process.env.PUBLIC_URL || "").replace(/\/$/, "");
+  const pathname = window.location.pathname;
+  const isHomePath =
+    pathname === "/" || pathname === base || pathname === `${base}/`;
+
   return (
     <div className={isDark ? "dark-mode" : null}>
       <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
@@ -51,21 +57,30 @@ const Main = () => {
         ) : (
           <>
             <Header />
-            <Greeting />
-            <Skills />
-            <StackProgress />
-            <Education />
-            <WorkExperience />
-            <Projects />
-            <StartupProject />
-            <Achievement />
-            <Blogs />
-            <Talks />
-            <Twitter />
-            <Podcast />
-            <Profile />
-            <Footer />
-            <ScrollToTopButton />
+            {!isHomePath ? (
+              <>
+                <NotFound path={pathname} />
+                <Footer />
+              </>
+            ) : (
+              <>
+                <Greeting />
+                <Skills />
+                <StackProgress />
+                <Education />
+                <WorkExperience />
+                <Projects />
+                <StartupProject />
+                <Achievement />
+                <Blogs />
+                <Talks />
+                <Twitter />
+                <Podcast />
+                <Profile />
+                <Footer />
+                <ScrollToTopButton />
+              </>
+            )}
           </>
         )}
       </StyleProvider>

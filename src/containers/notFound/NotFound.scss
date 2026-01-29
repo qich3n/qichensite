@@ -1,0 +1,46 @@
+.not-found {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.not-found-title {
+  font-size: 72px;
+  margin: 0 0 12px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.not-found-text {
+  font-size: 20px;
+  line-height: 1.7;
+  margin: 0 auto 16px;
+  max-width: 820px;
+  text-align: center;
+}
+
+.not-found-path {
+  margin: 0 auto 20px;
+  max-width: 820px;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.not-found-path-label {
+  font-weight: 600;
+}
+
+.not-found-path-code {
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.not-found-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.not-found-button {
+  display: inline-block;
+}
+
