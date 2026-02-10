@@ -108,10 +108,20 @@ const educationInfo = {
       schoolName: "Northeastern University",
       logo: require("./assets/images/Northeastern University.png"),
       subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2019 - May 2024"
+      duration: "Graduated May 2024"
       //descBullets: [
       //  "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //  "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
+    },
+    {
+      schoolName: "Western Governors University",
+      logo: require("./assets/images/WGUMastersLogo.png"), 
+      subHeader: "Master of Science, Software Engineering - AI Engineering", 
+      duration: "Graduated February 2026" 
+      //descBullets: [
+      //  "Add any specific achievements or details here",
+      //  "Add more bullet points as needed"
       // ]
     }
   ]
