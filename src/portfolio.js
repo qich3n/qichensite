@@ -24,7 +24,7 @@ const greeting = {
   title: "Hi, Im Qi",
   subTitle: emoji("A passionate Software Developer 🚀"),
   resumeLink:
-    "https://drive.google.com/file/d/1V7YmdrUk5APadthOvunlKC3YLR2PuuRR/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1ogQnL9oweDVcU2syCvHts_SPobqZXvy0/view?usp=share_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
